@@ -16,7 +16,7 @@ cd "${threadname}"
 
 # actually getting the list of files
 #do not get the temp folder here because when multiple iterations of the script run this can cause issues with the time stamp being accidentally the same
-echo $website | pup 'div.fileText' | pup 'a attr{href}' | | sed -e '/\/image\//! s|//|https://|g' > "${wallpaperListDir}"
+echo $website | pup 'div.fileText' | pup 'a attr{href}' | sed -e '/\/image\//! s|//|https://|g' > "${wallpaperListDir}"
 #iterating through the list of images and downloading them all
 tempwallapaperlist="${wallpaperListDir}"
    while IFS= read -r link
