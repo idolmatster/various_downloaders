@@ -9,7 +9,8 @@ wallpaperListDir="/tmp/wallpaper-$(date).list"
 website=$(curl $1)
 
 #if the thread has a name use that as a folder name otherwise use website title just because creating folders by hand is boring
-threadname=$(echo "${website}" | pup 'span.subject text{}' | uniq)
+# last sed statement needs more work but this is a preliminary fix
+threadname=$(echo "${website}" | pup 'span.subject text{}' | uniq | sed 's/\// - /g')
 [ -z "$threadname" ] && threadname=$(echo "${website}" | pup 'title text{}' | cut -d "-" -f 2 | sed -e 's/^[[:space:]]*//')
 mkdir "${threadname}"
 cd "${threadname}"
