@@ -1,5 +1,3 @@
-# DEPRICATED / INCOMPATIBLE WITH SITE
-
 # how to use
 ./run.sh "link"
 
