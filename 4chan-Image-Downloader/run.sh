@@ -6,7 +6,7 @@
 wallpaperListDir="/tmp/wallpaper-$(date).list"
 
 #store website so we don't request more than we need to
-website=$(curl $1)
+website=$(wget -q -O - $1)
 
 #if the thread has a name use that as a folder name otherwise use website title just because creating folders by hand is boring
 # last sed statement needs more work but this is a preliminary fix
