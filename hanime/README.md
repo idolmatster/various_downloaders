@@ -7,4 +7,4 @@ currently in beta, there will be some bugs when downloading lower res videos
 
 ## required programs
 - jq
-- youtube-dl
+- ffmpeg
