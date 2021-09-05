@@ -3,6 +3,7 @@
 ## Dependencies
 - pup https://github.com/ericchiang/pup
 - wget |because I was lazy|
+- lynx
 
 ## How to run
 just run the script like this with $link being the link to the thread
@@ -12,7 +13,6 @@ just run the script like this with $link being the link to the thread
 - uniq
 - sed
 - bash
-- curl
 - rm / cd / echo
 
 ## FAQ
