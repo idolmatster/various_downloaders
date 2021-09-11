@@ -5,6 +5,7 @@
 -   Creates Folders with name and id
 -   atempts redownload if the there are missing files
 -   does not create temporary files
+-   only hits the page once
 
 ## dependencies
 
