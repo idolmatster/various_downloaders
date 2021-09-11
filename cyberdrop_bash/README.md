@@ -11,3 +11,8 @@
 -   pup
 -   wget
 -   other gnu goodness
+
+## the negatives
+- over engeneered
+- a bit bloated
+- no multidownload
