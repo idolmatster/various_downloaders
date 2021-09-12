@@ -1,5 +1,8 @@
 # Cyberdrop Bash Downloader
 
+## how to use
+./cybash.sh "linktogallery"
+
 ## Features
 
 -   Creates Folders with name and id
