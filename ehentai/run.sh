@@ -37,7 +37,7 @@ pagecount=$(echo ${pagecounter[-2]})
 
 echo $pagecount
 if [[ $pagecount == "" ]] ; then
-    pagecount=1
+    pagecount=0
 fi
 
 for I in `seq 0 $pagecount`
