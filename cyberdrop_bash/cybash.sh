@@ -10,6 +10,12 @@ cyerrordownloadpage(){
 
 link="$1"
 
+if [[ "$link" == "" ]] ; then 
+    echo "please supply a link as argument like $0 someurl"
+    exit
+fi
+
+
 echo "downloading page"
 webpage=$(wget "$link" -q -O - || cyerrordownloadpage)
 # webpage=$(lynx -source "$link" || cyerrordownloadpage )
