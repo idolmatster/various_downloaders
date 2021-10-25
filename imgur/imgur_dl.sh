@@ -9,6 +9,7 @@ title=$(echo "$page" | pup 'title text{}' | sed 's/\// - /g' | sed 's/|/ - /g')
 shortcode=$(echo ${link##*imgur.com/})
 shortcode=$(echo ${shortcode##*a/})
 shortcode=$(echo ${shortcode##*gallery/})
+shortcode=$(echo ${shortcode##*t/*/})
 shortcode=$(echo ${shortcode%%/*})
 #echo $shortcode
 
@@ -20,7 +21,7 @@ script_link=$(echo "$page" | pup 'script attr{src}' | grep "js/main.")
 script=$(curl "$script_link" | head -n 1 > script.js)
 
 # get token from script
-client_id=$(./linkconvert)
+client_id=$(../tokenscript)
 #echo $client_id
 rm script.js
 
