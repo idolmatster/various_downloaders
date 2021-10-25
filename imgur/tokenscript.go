@@ -1,11 +1,9 @@
 package main
   
 import (
-    "fmt"
-    "os"
+	"fmt"
+	"os"
 	"strings"
-	"time"
-	"strconv"
 	"io/ioutil"
 )
   
