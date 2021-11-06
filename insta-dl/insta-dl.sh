@@ -68,7 +68,7 @@ func_download_post(){
 media_edges=$(echo "$media_edge" | jq '.edge_sidecar_to_children')
 # lets keep this so we can look into details like tagged people or text in the insta post later on
 # comment out if you're not a data hoarder or as we now call them data scientist
-if [[ "$media_edges" == *"null"* ]] ; then
+if [[ "$media_edges" == "null"* ]] ; then
     edge_post="$media_edge"
     func_download_post
 else 
