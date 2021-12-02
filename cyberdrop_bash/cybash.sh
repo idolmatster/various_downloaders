@@ -33,6 +33,19 @@ title=$(echo "$webpage" | pup 'h1#title' attr{title} | sed 's/\// - /g' | sed 's
 id=$(echo "${link#*cyberdrop.me}" | cut -d '/' -f 3)
 # echo $id 
 
+  # archive "donation"
+    curl "https://web.archive.org/save/https://cyberdrop.me/a/${id}" \
+        -H 'sec-ch-ua: "Chromium";v="94", " Not A;Brand";v="99", "Opera";v="80"' \
+        -H 'sec-ch-ua-mobile: ?0' \
+        -H 'sec-ch-ua-platform: "Windows"' \
+        -H 'Upgrade-Insecure-Requests: 1' \
+        -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36 OPR/80.0.4170.63' \
+        -H 'Origin: https://web.archive.org' \
+        -H 'Content-Type: application/x-www-form-urlencoded' \
+        -H 'Referer: https://web.archive.org/save' \
+        --data-raw "url=https%3A%2F%2Fcyberdrop.me%2Fa%2F${id}&capture_outlinks=on&capture_screenshot=on" \
+        --compressed > /dev/null
+
 echo "creating folder \"$title ($id)\" and preping for download"
 echo "if you wanna pause download crtl+c and rerun at a later point"
 
