@@ -14,6 +14,7 @@
 
 -   pup
 -   wget
+-   curl (or just remove the "data donation" feature )
 -   other bash + gnu/linux goodness
 
 ## the negatives
