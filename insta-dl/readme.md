@@ -1,7 +1,7 @@
 # insta-dl
 a simple bash script using jq and curl to download instagram posts for data research.
 
-` please not the single media post bug was fixed in this version`
+` please note the single media post bug was fixed in this version`
 
 ## how to use
 - dowload the script
