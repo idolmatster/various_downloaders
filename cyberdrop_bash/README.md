@@ -1,14 +1,10 @@
 # Cyberdrop Bash Downloader  
 
-========== New & Improved ===========
- this version now uses jq instead of
- pup. It's also API based instread
- of based on the web page.
- This enables smart retry and
- preview downloading if the image is
- not available at the moment.
- Bonus better error message!
-=====================================
+### New & Improved
+ this version now uses jq instead of pup.  
+ It's also API based instread of based on the web page.  
+ This enables smart retry and preview downloading if the image is  
+ not available at the moment. Bonus better error message!  
 
 ## how to use
 ./cybash.sh "linktogallery"
