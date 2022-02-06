@@ -11,7 +11,7 @@ sudo apt upgrade -y
 sudo apt install bash -y
 # that program is just great to use
 # look it up https://github.com/ericchiang/pup
-sudo apt install pup -y 
+sudo apt install jq -y 
 sudo apt install wget -y
 sudo apt install cut -y
 
