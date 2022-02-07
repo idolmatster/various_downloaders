@@ -4,6 +4,7 @@ link="$1"
 # you wanna see it archived on the wayback mashine
 # "yes" or "no"
 donator="no"
+useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36 OPR/83.0.4254.27"
 
 cyerrordownloadpage(){
     echo "there was an error downloading the page try again later."
