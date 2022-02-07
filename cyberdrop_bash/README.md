@@ -16,6 +16,8 @@
 -   now downloads previews if the image is not available (better then nothing)
 -   does not create temporary files
 -   only hits the api once
+-   with minor tweak you can archive it for generations to come
+   -    change one line in the script
 
 ## dependencies
 
