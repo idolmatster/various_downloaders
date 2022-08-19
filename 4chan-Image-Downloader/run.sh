@@ -22,7 +22,7 @@ echo $website | pup 'div.fileText' | pup 'a attr{href}' | sed -e '/\/image\//! s
 tempwallapaperlist="${wallpaperListDir}"
    while IFS= read -r link
        do
-           wget -c "${link}"
+           wget -c -q --show-progress "${link}"
 done <"$tempwallapaperlist"
 #cleaning my mess up so it's less stuff in temp
 rm "${wallpaperListDir}"
